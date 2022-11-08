@@ -1,0 +1,94 @@
+1) Verificar em qual diretório você se encontra.
+
+pwd
+
+
+2) Criar a seguinte estrutura de diretórios dentro do /home/seu_usuario
+./ifpr
+./trabalho
+./ifpr/textos
+
+cd /home/Luka/
+mkdir /ifpr/ 
+mkdir /trabalho/
+cd /ifpr/
+mkdir /textos/
+
+3) Entrar na pasta ifpr
+
+cd /ifpr/
+
+4) Criar um arquivo chamado “numeros.txt”, usando o comando cat, contendo os
+seguintes números: 10
+100
+50
+25
+1
+2
+
+cat > numeros.txt 
+
+100
+50
+25
+1
+2
+
+CTRL+D para gravar
+
+
+5) Duplicar o arquivo numeros.txt para numeros1.txt e numeros2.txt
+
+cp numeros.txt numeros1.txt 
+cp numeros.txt numeros2.txt
+
+6) Copiar os arquivos com extensão .txt para a pasta trabalho no home do usuário
+
+cp *.txt /home/luka/trabalho/
+
+7) Exibir todos os arquivos com seus detalhes ( permissões de acesso, data, hora de
+criação, tamanho)
+
+ll
+
+8) Mudar a permissão de acesso do arquivo numeros.txt para –rwxr-xr-x
+
+
+chmod 751 numeros.txt
+
+
+9) Mudar a permissão de acesso do arquivo numeros.txt para -rw-r—r--
+
+
+chmod 644 numeros.txt
+
+10) Crie a pasta ifprbackup no home do usuário e copie o conteúdo da pasta ifpr, para
+dentro do /home/seu_usuario/ifprbackup
+
+cd /home/Luka/
+mkdir ifprbackup
+
+rsync -a /home/Luka/ifpr /home/Luka/ifprbackup
+
+11) Deletar os arquivos com extensão .txt
+
+rm *.txt
+
+12) Apagar a pasta textos que está dentro de ifpr
+
+rm -r /home/Luka/ifpr/textos/ 
+
+13) Entrar na pasta /home/seu_usuario/ifpr
+
+cd /home/Luka/ifpr/
+
+14) Renomear o arquivo numeros.txt para sequencia.txt
+
+mv numeros.txt sequencia.txt
+
+15) Listar todos os arquivos da pasta /bin e guardar essa lista em um arquivo chamado
+“listabin.txt”
+
+cd /bin/
+
+ls > listabin.txt
