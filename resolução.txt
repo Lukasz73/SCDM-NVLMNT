@@ -1,5 +1,5 @@
 1) Verificar em qual diretório você se encontra.
-a
+
 pwd
 
 
